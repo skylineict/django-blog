@@ -1,0 +1,78 @@
+main {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.mylist,
+::after {
+  list-style-type: none !important;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.mylist a {
+  color: aliceblue;
+}
+
+.mylist a:link {
+  text-decoration: none;
+}
+@media (min-width: 900px) {
+  .topmenu {
+    background-color: #0d6efd !important;
+  }
+  .topmenu a {
+    color: aliceblue !important;
+    font-family: "Rubik", sans-serif;
+  }
+
+  li a:hover {
+    color: red !important;
+  }
+
+  .topmenu a:hover {
+    border-bottom: 3px solid red;
+  }
+
+  .dropdown-menu {
+    background-color: rgb(202, 147, 147);
+  }
+}
+
+@media (max-width: 520px) {
+  .btn-outline-light {
+    color: #01060c;
+    border-color: #0d6efd;
+  }
+}
+
+.social i {
+  background-color: aliceblue;
+  padding: 3px 3px 3px 3px;
+  border: 2px solid blue;
+  border-radius: 3px;
+}
+
+.social {
+  padding-bottom: 5px;
+}
+
+.carousel-caption {
+  background: rgb(87, 23, 185);
+  background: linear-gradient(
+    112deg,
+    rgba(87, 23, 185, 0.5914740896358543) 0%,
+    rgba(27, 7, 56, 0.6278886554621849) 100%
+  );
+
+  overflow: hidden;
+}
+
+.fluid img {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.fluid:hover img {
+  /* transform: scale(1.5); */
+  transform: rotateY(180deg);
+}

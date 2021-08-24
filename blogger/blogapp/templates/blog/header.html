@@ -1,0 +1,68 @@
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light topmenu">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" aria-current="page" href="#"
+            ><i class="bi bi-house-door mx-1"></i>Home</a
+          >
+        </li>
+
+        <li class="nav-item dropdown mx-2">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-cast mx-1"></i>
+            Projects
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">BLog App</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">online shop</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item qv" href="#">Event app</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">investment app</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">School app</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#"
+            ><i class="bi bi-terminal mx-1"></i>Django</a
+          >
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#"><i class="bi bi-pen mx-1"></i> writer</a>
+        </li>
+      </ul>
+
+      <div class="col-sm-3 text-end button">
+        <button type="button" class="btn btn-outline-light mx-2">Login</button>
+        <button type="button" class="btn btn-outline-light">Register</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+{% endblock %}
